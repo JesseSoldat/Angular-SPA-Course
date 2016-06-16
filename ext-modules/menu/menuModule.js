@@ -23,7 +23,8 @@ angular.module('Menu', [])
   return {
   	require: '^menu',
   	scope: {
-  		label: '@'
+  		label: '@',
+  		icon: '@'
   	},
     templateUrl: 'ext-modules/menu/menuItem.html',
     link: function(scope, e, attr, ctrl) {
