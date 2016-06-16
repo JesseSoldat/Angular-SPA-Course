@@ -5,6 +5,9 @@ angular.module('Framework', ['Menu', 'Dashboard'])
 }])
 .directive('framework', function() {
   return {
-    template: 'test2'
+    // template: '<h1>Framework</h1>'
+    templateUrl: 'ext-modules/framework/framework.html'
+    
+
   };
 });

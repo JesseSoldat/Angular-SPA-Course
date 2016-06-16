@@ -5,7 +5,7 @@ angular.module('app', ['Framework'])
 }])
 .directive('test', function() {
   return {
-    template: 'test1'
+    // template: ''
 	// templateUrl: 'appTemplate.html'
 	
 
