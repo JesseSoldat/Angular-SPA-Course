@@ -5,6 +5,10 @@
 }
 .title-area {
 	display: inline-block;
+	text-align: center;
+}
+.logo-area {
+	text-align: center;
 }
 .icon {
 	display: inline-block;
@@ -21,4 +25,21 @@
 .logo-subtitle {
 	font-size: 13px;
 	margin-top: -13px;
+}
+.right-controls {
+	line-height: 60px;
+}
+.right-controls > div {
+	text-align: center;
+}
+@media screen and (min-width: 768px) {
+	.right-controls > div {
+		text-align: right;
+	}
+	/*.title-area {
+		text-align: left;
+	}*/
+	.logo-area {
+		text-align: left;
+	}
 }
