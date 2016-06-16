@@ -2,13 +2,13 @@ angular.module('Menu', [])
 
 
 
-.controller('MenuController', ['$scope', '$rootScope', function($scope, $rootScope) {
+.controller('MenuController', ['$scope', '$rootScope', function ($scope, $rootScope) {
 
   	this.setActiveElement = function(el) {
   		$scope.activeElement = el;
   	};
   	this.setRoute = function(route) {
-  		console.log(route);
+  		// console.log(route);
   		$rootScope.$broadcast('menu-item-selected-event', {route: route})
   		};
 }])
