@@ -5,8 +5,8 @@ angular.module('Framework', ['Menu', 'Dashboard'])
 }])
 .directive('framework', function() {
   return {
-  	transclude: false,
-  	scope: {
+  	transclude: true,
+  	scope: { 
   		title: '@',
   		subtitle: '@', 
   		iconFile: '@'
