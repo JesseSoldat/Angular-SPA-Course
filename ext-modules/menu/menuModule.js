@@ -3,6 +3,9 @@ angular.module('Menu', [])
 
 
 .controller('MenuController', ['$scope', '$rootScope', function ($scope, $rootScope) {
+    this.getActiveElement = function() {
+      return $scope.activeElement;
+    };
 
   	this.setActiveElement = function(el) {
   		$scope.activeElement = el;
@@ -37,6 +40,10 @@ angular.module('Menu', [])
   	},
     templateUrl: 'ext-modules/menu/menuItem.html',
     link: function (scope, el, attr, ctrl) {
+
+        scope.isActive = function () {
+          return el === ctrl.getActiveElement();
+        }
             el.on('click', function (evt) {
                 evt.stopPropagation();
                 evt.preventDefault();
