@@ -8,8 +8,9 @@
 	text-align: center;
 }
 .logo-area {
-	text-align: center;
+	/*text-align: center;*/
 }
+
 .icon {
 	display: inline-block;
 	width: 50px;
@@ -21,6 +22,15 @@
 .logo-title {
 	color: #111;
 	margin-top: 6px;
+}
+
+@media screen and (max-width: 430px) {
+	.icon {
+		display: none;
+	}
+	.logo-title {
+		font-size: 18px;
+	}
 }
 .logo-subtitle {
 	font-size: 13px;
@@ -42,4 +52,19 @@
 	.logo-area {
 		text-align: left;
 	}
+}
+
+.collapsed-menu {
+	display: inline-block;
+	height: 100%;
+}
+.nav-button {
+	height: 40px;
+	width: 60px;
+	margin-top: 10px;
+	border: 1px solid #888;
+	padding: 0;
+	font-size: 26px;
+	color: #777;
+
 }
